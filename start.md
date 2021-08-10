@@ -35,6 +35,8 @@ lektor plugins list
 
 https://resize.imageonline.co/
 
+https://ps.gaoding.com/#/
+
 # publish
 
 git remote add upstream git@github.com:openddd-com/openddd.github.io.git

@@ -20,7 +20,7 @@
   <div class="container">
     <div class="row">
       <div class="hidden-xl-down col-xl-4">
-        <img class="website-logo float-sm-left" src="{{ '/static/images/brutus-270.png'|asseturl }}">
+        <img class="website-logo float-sm-left" src="{{ '/static/images/openddd-270.png'|asseturl }}">
       </div>
       <div class="col-sm-12 col-md-8">
         <!-- <h1 class="display-1">Openddd</h1> -->
@@ -79,15 +79,15 @@
       <hr/>
 #}
 
-      <h3><a href="{{ '/2.news/buzz/'|url(alt=this.alt) }}">{{ t_latest_news }}</a></h3>
-      {% set blog = site.query('/2.news/buzz', alt=this.alt).all() %}
+      <h3><a href="{{ '/news/buzz/'|url(alt=this.alt) }}">{{ t_latest_news }}</a></h3>
+      {% set blog = site.query('/news/buzz', alt=this.alt).all() %}
       <p><a href="{{ blog[0]|url(alt=this.alt) }}">{{ blog[0].pub_date.strftime("%d %b")}}: {{ blog[0].title }}</a></p>
 
       <hr/>
 
-      {% set events = site.query('/2.news/events', alt=this.alt).filter(F.upcoming==True) %}
+      {% set events = site.query('/news/events', alt=this.alt).filter(F.upcoming==True) %}
       {% if events %}
-      <h3><a href="{{ '/2.news/events/'|url(alt=this.alt) }}">{{ t_meet_team }}</a></h3>
+      <h3><a href="{{ '/news/events/'|url(alt=this.alt) }}">{{ t_meet_team }}</a></h3>
 
       <div id="carousel-events" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
@@ -156,15 +156,15 @@
 
     <hr/>
 #}
-    <h3><a href="{{ '/2.news/buzz/'|url(alt=this.alt) }}">{{ t_latest_news }}</a></h3>
-    {% set blog = site.query('/2.news/buzz', alt=this.alt).all() %}
+    <h3><a href="{{ '/news/buzz/'|url(alt=this.alt) }}">{{ t_latest_news }}</a></h3>
+    {% set blog = site.query('/news/buzz', alt=this.alt).all() %}
     <p><a href="{{ blog[0]|url(alt=this.alt) }}">{{ blog[0].pub_date.strftime("%d %b")}}: {{ blog[0].title }}</a></p>
 
     <hr/>
 
-    {% set events = site.query('/2.news/events', alt=this.alt).filter(F.upcoming==True) %}
+    {% set events = site.query('/news/events', alt=this.alt).filter(F.upcoming==True) %}
     {% if events %}
-    <h3><a href="{{ '/2.news/events/'|url(alt=this.alt) }}">{{ t_meet_team }}</a></h3>
+    <h3><a href="{{ '/news/events/'|url(alt=this.alt) }}">{{ t_meet_team }}</a></h3>
 
     <div id="carousel-events" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
