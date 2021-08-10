@@ -1,0 +1,21 @@
+[project]
+name = openddd
+[servers.ghpages]
+target = ghpages://openddd/openddd-com.github.io?cname=openddd.com
+default = yes
+
+[servers.ghpages-https]
+target = ghpages+https://openddd/openddd-com.github.io?cname=openddd.com
+[packages]
+lektor-rst = 0.2.0
+lektor-github-repos = 0.1.1
+lektor-gravatar = 0.1.2
+# `name` in alternatives should be in english. This is used for translations
+[alternatives.en]
+name = English
+primary = yes
+locale = en_US
+[alternatives.zh]
+name = Chinese
+url_prefix = /zh_CN/
+locale = zh_CN

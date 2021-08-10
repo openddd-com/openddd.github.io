@@ -1,0 +1,2 @@
+{% if this.title %}<h3>{{ this.title }}</h3>{% endif %}
+<p>{% if this.image %}<img src="{{ this.record.path }}{{ this.image }}" class="hidden-sm-down p-3 float-{{ this.image_alignment }}">{% endif %} {{ this.text }}</p>

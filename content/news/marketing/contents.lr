@@ -1,0 +1,16 @@
+title: Domain marketing
+---
+sort_key: 2
+---
+summary: What's happening around the Openddd community
+---
+body: 
+---
+_template: news.html
+---
+gutter:
+
+`RSS Feed </news/buzz/atom.xml>`__
+
+`Upcoming events </news/events/>`__
+------------------------------------------------

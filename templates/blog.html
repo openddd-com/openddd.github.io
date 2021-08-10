@@ -1,0 +1,29 @@
+{% extends "page.html" %}
+{% from "macros/blog.html" import render_blog_post %}
+{% from "macros/pagination.html" import render_pagination %}
+{% from "macros/breadcrumbs.html" import breadcrumbs %}
+
+{% block title %}{{ this.title }}{% endblock %}
+{% block extra_head %}
+<link href="{{ '/news/buzz'|url(alt=this.alt) }}atom.xml" type="application/atom+xml" rel="alternate" title="The Buzz" />
+{% endblock %}
+{% block preamble %}
+<div class="banner">
+  <div class="container">
+    <p>{{ breadcrumbs(this) }}</p>
+    <h1>{{ this.title }}</h1>
+    <p>{{ this.summary }}</p>
+  </div>
+</div>
+{% endblock %}
+{% block main %}
+{% for child in this.pagination.items %}
+  {{ render_blog_post(child, from_index=true) }}
+{% endfor %}
+{% endblock %}
+{% block gutter %}
+<div class="col-sm-12 col-md-4 gutter">
+  {{ this.gutter_top }}
+  {{ render_pagination(this.pagination, alt=this.alt) }}
+</div>
+{% endblock %}
