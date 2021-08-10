@@ -1,11 +1,11 @@
 [project]
 name = openddd
 [servers.ghpages]
-target = ghpages://openddd/openddd-com.github.io?cname=openddd.com
+target = ghpages://openddd-com/openddd.github.io?cname=openddd.com
 default = yes
 
 [servers.ghpages-https]
-target = ghpages+https://openddd/openddd-com.github.io?cname=openddd.com
+target = ghpages+https://openddd-com/openddd.github.io?cname=openddd.com
 [packages]
 lektor-rst = 0.2.0
 lektor-github-repos = 0.1.1
