@@ -60,7 +60,7 @@ title: ### One codebase. Multiple apps.
 ----
 text: Openddd allows you to write your app in Python and release it on multiple platforms. No need to rewrite the app in multiple programming languages. It means **no issues** with build tools, environments, compatibility, etc.
 ----
-image: opendd-97.png
+image: openddd-97.png
 ----
 image_alignment: right
 #### text-block ####
