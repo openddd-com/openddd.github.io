@@ -1,15 +1,27 @@
 [project]
 name = openddd
+
 [servers.ghpages]
 target = ghpages://openddd-com/openddd.github.io?cname=openddd.com
 default = yes
 
 [servers.ghpages-https]
 target = ghpages+https://openddd-com/openddd.github.io?cname=openddd.com
+
 [packages]
 lektor-rst = 0.2.0
 lektor-github-repos = 0.1.1
 lektor-gravatar = 0.1.2
+lektor-webpack-support = 0.3
+lektor-disqus-comments = 0.1
+lektor-markdown-header-anchors = 0.1
+lektor-markdown-highlighter = 0.1
+lektor-markdown-admonition = 0.1
+lektor-atom = 0.3.1
+lektor-tags = 0.3
+lektor-slugify = 0.4
+
+
 # `name` in alternatives should be in english. This is used for translations
 [alternatives.en]
 name = English

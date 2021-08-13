@@ -1,3 +1,0 @@
-[lektor.plugins]
-website-plugin = lektor_website_plugin:WebsitePlugin
-

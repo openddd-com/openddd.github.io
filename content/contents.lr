@@ -1,175 +1,135 @@
-_model: home
+_model: poster
 ---
-_template: home.html
----
-title: OpenDDD
----
-summary: 
----
-description:
-
-Domain Driven Design
-
-Dev once. Write your apps in Python.
-
-Ops everywhere.Release them on iOS, Android, Windows, MacOS, Linux, Web, and tvOS using rich, native user interfaces. Multiple apps, one codebase, with a fully native user experience on every platform.
----
-header:
-
-#### button-block ####
-label: Take the Tutorial
-----
-link: /project/using/
-----
-icon: 
-----
-type: primary
-----
-size: lg
-----
-is_block: no
-#### button-block ####
-label: I Want To Contribute
-----
-link: /contributing/
-----
-icon: 
-----
-type: primary
-----
-size: lg
-----
-is_block: no
-#### button-block ####
-label: Donate and Support Us!
-----
-link: /contributing/membership/
-----
-icon: 
-----
-type: success
-----
-size: lg
-----
-is_block: 
+title: Welcome
 ---
 body:
 
-#### text-block ####
-title: ### One codebase. Multiple apps.
+#### banner ####
+image: header.jpg
 ----
-text: Openddd allows you to write your app in Python and release it on multiple platforms. No need to rewrite the app in multiple programming languages. It means **no issues** with build tools, environments, compatibility, etc.
+height: 500-tall
 ----
-image: openddd-97.png
-----
-image_alignment: right
-#### text-block ####
-title: ### Python native tools...
-----
-text: Python has proven itself as a highly capable language - approachable for newcomers, but powerful in the hands of experts. Why shouldn't you be able to **use Python everywhere** that you need to tell a computer to do something? And shouldn't your tools **exploit all the capabilities of Python** as a language, not just the bits that map nicely to a C binding?
-----
-image: python.png
-----
-image_alignment: right
-#### text-block ####
-title: ### ...on mobile & desktop...
-----
-text: Modern computing doesn't happen in an 80x25 console window. It happens on **phones, tablets, and desktop machines** with rich user interfaces. Shouldn't you be able to use Python in all those locations, and **exploit the unique capabilities of those platforms**?
-----
-image: cross-platform.png
-----
-image_alignment: left
-#### text-block ####
-title: ### ...behaving natively.
-----
-text: End users shouldn't have to care what language their tools are written in. And that starts with looking and behaving **like completely native tools**. Native appearance, native behavior, delivered in the way a native app is delivered. Why shouldn't your Python tools fit in just as well as a native tool?
-----
-image: native.png
-----
-image_alignment: right
-#### text-block ####
-title: ## This is Openddd.
-----
-text: This is what Openddd provides. Tools to help you write Python code with a rich, **native user interface**; and the libraries and support code necessary to get that code running on **iOS, Android, macOS, Linux, Windows, tvOS, and more**.
-----
-image: openddd-97.png
-----
-image_alignment: left
-#### text-block ####
-title: ### Open source
-----
-text: The Open Source development process has proven itself to be the most reliable way to develop robust and reliable software. That's why the entire Openddd suite of tools are BSD licensed, and **available for all to use and modify**.
-----
-image: opensource.png
-----
-image_alignment: right
-#### text-block ####
-title: ### All contributions welcome
-----
-text: But it's not just about code. A successful software project requires documentation, design skills, feedback and bug reports. The Openddd community acknowledges that **all contributions are important** — not just the ones that come as a pull request on GitHub.
-----
-image: labhr.png
-----
-image_alignment: left
-#### text-block ####
-title: ### From diversity comes strength
-----
-text: A diverse community is a strong community. This means accepting people of all levels of experience, from all backgrounds, of all races, creeds, orientations and expressions. The Openddd project is committed to **developing and maintaining a diverse, welcoming community**. We have an **open offer to mentor anyone** who wants to get involved as a contributor, backed up by a `Code of Conduct <community/behavior/code-of-conduct/>`__  that is rigorously enforced.
-----
-image: diversity.png
-----
-image_alignment: right
-#### text-block ####
-title: Contribute!
-----
-text: If all this sounds interesting, why not take a look at the `Openddd projects </project/projects>`__ and see how you can use them when developing Python applications? Or, if you'd like to contribute, and you've never contributed to open source before, start with our `guide for first time contributors </contributing/first-time/>`__. If you feel ready to dive straight in, check out the `project pages </project/projects/>`__ or our guide on `what you can do to help </contributing/how/>`__.
-----
-image: 
-----
-image_alignment: 
-#### button-block ####
-label:
+contents:
 
- Contribute to Openddd
-----
-link: /contributing/
-----
-icon: code-fork
-----
-type: primary
-----
-size: lg
-----
-is_block: yes
+<div class="container lektor-intro">
+  <div class="row">
+    <div class="col-md-8">
+      <img src="logo.png" alt="Lektor" class="logo">
+      <p>
+	A flexible and powerful static content management system for building
+	complex and beautiful websites out of flat files — for people who do
+        not want to make a compromise between a CMS and a static blog engine.
+      <p>
+        Getting your ideas implemented is as easy as frying an egg.
+    </div>
+    <div class="col-md-4 visible-md-block visible-lg-block">
+      <div class="download-btn"><a href="downloads/"
+        ><i class="glyphicon glyphicon-download-alt"></i> Download</a></div>
+    </div>
+  </div>
+  <div class="install-row hide-for-windows">
+    <pre>curl -sf https://www.getlektor.com/installer.py | sudo python3</pre>
+  </div>
+</div>
 #### text-block ####
-title: ### Stay in touch!
+text:
+
+<div class="badges">
+  <ul>
+    <li><a href="https://twitter.com/getlektor"
+      class="twitter-follow-button" data-show-count="false"
+      data-size="large" data-dnt="true">Follow @getlektor</a>
+    </li>
+    <li><a class="github-button" href="https://github.com/lektor/lektor"
+      data-style="mega" data-count-href="/lektor/lektor/stargazers"
+      data-count-api="/repos/lektor/lektor#stargazers_count"
+      data-count-aria-label="# stargazers on GitHub"
+      aria-label="Star lektor/lektor on GitHub">Star</a>
+    </li>
+    <li><a href="https://gitter.im/lektor/lektor"
+      class="js-gitter-toggle-chat-button"><img
+      src="https://badges.gitter.im/lektor/lektor.svg"
+      alt="Join the chat at https://gitter.im/lektor/lektor"></a>
+    </li>
+  </ul>
+</div>
 ----
-text: Follow `@PyOpenddd <https://twitter.com/PyOpenddd/>`__ on Twitter, or `join the Openddd enthusiasts mailing list </community/keep-informed/>`__ for updates, hints, tips, and announcements related to the project.
-----
-image: 
-----
-image_alignment: 
-#### button-block ####
-label: Keep in touch!
-----
-link: /community/keep-informed/
-----
-icon: envelope
-----
-type: success
-----
-size: lg
-----
-is_block: yes
+class: default
 #### text-block ####
-title: ### Members
+text:
+
+## Full of Features
+
+* <i class="feature-circle fa fa-ship"></i> **Deploy Anywhere** Because Lektor
+  builds out 100% static HTML you can deploy them to any host (including S3,
+  GitHub Pages, any web host, etc.).
+* <i class="feature-circle fa fa-globe"></i> **Cross Platform** It runs on
+  Linux, OSX and Windows.
+* <i class="feature-circle fa fa-file-code-o"></i> **100% File Based** All
+  source data is well structured and can be tracked in a version control
+  system or cloud storage like Dropbox.
+* <i class="feature-circle fa fa-database"></i> **Flat-File Database** All
+  source data is stored in a flat-file tree database and can be freely
+  queried. The layout of that data is completely configurable.
+* <i class="feature-circle fa fa-pencil"></i> **Customizable Admin** Lektor
+  comes fully equipped with a flexible and beautiful admin interface so you can
+  edit your pages without having to touch the raw sources.
+* <i class="feature-circle fa fa-code-fork"></i> **Dependency Tracking**
+  The build process intelligently tracks page dependencies such that it only
+  rebuilds pages that have changed.
+* <i class="feature-circle fa fa-image"></i> **Image Tools** Create
+  thumbnails and give convenient access to EXIF data.
+* <i class="feature-circle fa fa-puzzle-piece"></i> **Plugin System** Lektor
+  supports loading plugins that can customize a wide range of functionality.
+* <i class="feature-circle fa fa-terminal"></i> **Python API** The build
+  system is written in Python and provides a documented API to extend it and
+  integrate into other apps.
+* <i class="feature-circle fa fa-language"></i> **Multilingual** We can
+  speak multiple languages and allow you to easily create localized websites.
 ----
-text: Openddd is supported by users like you! Every little bit helps: `click here to contribute </contributing/membership/>`__.
+class: two-column-list
+#### slideshow ####
+slides:
+
+##### slide #####
+description:
+
+Lektor comes with a customizable admin panel that allows anyone to
+create and edit pages.
+-----
+image: edit-post.png
+##### slide #####
+description:
+
+The project files are neatly laid out in the filesystem and allow tracking
+via cloud storage like Dropbox or version control.
+-----
+image: filesystem.png
+##### slide #####
+description: Projects can be immediately published to remote servers from the admin panel.
+-----
+image: publish.png
+##### slide #####
+description:
+
+Changes become immediately visible as Lektor rebuilds on demand.  A preview
+is also embedded in the admin interface.
+-----
+image: preview.png
+##### slide #####
+description:
+
+The structure of the pages and the templates used to render the page can
+be completely customized.
+-----
+image: structure.png
+#### text-block ####
+text:
+
+## Open Source
+
+Lektor at its core is a three clause [BSD licensed
+](https://raw.githubusercontent.com/lektor/lektor/master/LICENSE) Open Source
+project written in Python and Node.js.
 ----
-image: 
-----
-image_alignment: 
----
-gutter_top: ### Many thanks to
----
-gutter_bottom: ### [... and many more](/project/projects/)
+class: centered

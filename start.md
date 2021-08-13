@@ -1,4 +1,4 @@
-# install miniconda with python3.8@windows
+# install miniconda with python3.8@windows; 3.9
 https://docs.conda.io/en/latest/miniconda.html#installing
 
 https://docs.conda.io/projects/conda/en/latest/commands.html
@@ -7,7 +7,7 @@ conda update conda
 
 python -m venv .venv
 
-.\.venv\Scripts\activate.bat
+.\.venv\Scripts\activate
 
 python -m pip  install --upgrade pip
 python -m pip install --upgrade setuptools wheel lektor
@@ -20,6 +20,10 @@ Then execute the quickstart command to create a new project
 ```
 # Running your Project
 lektor server
+
+# update the webpack files
+
+lektor server -f webpack
 
 # Accessing the Admin
 http://127.0.0.1:5000/admin/
@@ -44,3 +48,13 @@ git remote add upstream git@github.com:openddd-com/openddd.github.io.git
 git fetch upstream
 
 git rebase upstream/lektor
+
+# refer
+https://www.getlektor.com/docs/
+https://github.com/lektor/lektor-website
+https://docs.beeware.org/en/latest/
+
+# node -i node-sass
+npm config set registry https://registry.npm.taobao.org
+npm install node-sass
+

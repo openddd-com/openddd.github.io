@@ -1,29 +1,28 @@
-{% extends "page.html" %}
-{% from "macros/blog.html" import render_blog_post %}
+{% extends "blog-layout.html" %}
 {% from "macros/pagination.html" import render_pagination %}
-{% from "macros/breadcrumbs.html" import breadcrumbs %}
-
-{% block title %}{{ this.title }}{% endblock %}
-{% block extra_head %}
-<link href="{{ '/news/buzz'|url(alt=this.alt) }}atom.xml" type="application/atom+xml" rel="alternate" title="The Buzz" />
-{% endblock %}
-{% block preamble %}
-<div class="banner">
-  <div class="container">
-    <p>{{ breadcrumbs(this) }}</p>
-    <h1>{{ this.title }}</h1>
-    <p>{{ this.summary }}</p>
+{% block title %}The Transcript{% endblock %}
+  {% block blog_body %}
+  <h1>The Transcript</h1>
+  {% for post in this.pagination.items %}
+  <div class="blog-snippet">
+    <h2><a href="{{ post|url }}">{{ post.title }}</a></h2>
+    <p class="summary">
+      {{ post.summary }}
+      <a class="more" href="{{ post|url }}">Read more …</a>
+    <p class="meta">
+      by
+      {% if post.twitter_handle %}
+        <a href="https://twitter.com/{{ post.twitter_handle }}">{{
+          post.author or post.twitter_handle }}</a>
+      {% else %}
+        {{ post.author }}
+      {% endif %}
+      on {{ post.pub_date|dateformat }}
+    </p>
   </div>
-</div>
-{% endblock %}
-{% block main %}
-{% for child in this.pagination.items %}
-  {{ render_blog_post(child, from_index=true) }}
-{% endfor %}
-{% endblock %}
-{% block gutter %}
-<div class="col-sm-12 col-md-4 gutter">
-  {{ this.gutter_top }}
-  {{ render_pagination(this.pagination, alt=this.alt) }}
-</div>
+  {% endfor %}
+
+  {% if this.pagination.pages > 1 %}
+    {{ render_pagination(this.pagination) }}
+  {% endif %}
 {% endblock %}

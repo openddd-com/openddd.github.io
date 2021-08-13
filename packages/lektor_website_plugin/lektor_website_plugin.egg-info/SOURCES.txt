@@ -1,8 +1,0 @@
-lektor_website_plugin.py
-setup.py
-lektor_website_plugin.egg-info/PKG-INFO
-lektor_website_plugin.egg-info/SOURCES.txt
-lektor_website_plugin.egg-info/dependency_links.txt
-lektor_website_plugin.egg-info/entry_points.txt
-lektor_website_plugin.egg-info/requires.txt
-lektor_website_plugin.egg-info/top_level.txt

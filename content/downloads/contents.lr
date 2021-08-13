@@ -1,0 +1,60 @@
+_model: page
+---
+title: Downloads
+---
+body:
+
+#### banner ####
+image: header.jpg
+----
+height: 300
+----
+contents: 
+#### text-block ####
+text:
+
+Lektor is an [Open Source Project](../license/) and freely available to
+download.  It's currently still under heavy development and not all platforms
+are equally well supported.
+
+## Command Line Interface
+
+If you are on Linux or Mac you can install the command line version of
+Lektor by copy/pasting a command into your terminal.
+
+!!! Scared about copy/pasting this into a terminal?  We will not do anything
+before asking you for confirmation and you can download [the script](https://www.getlektor.com/installer.py)
+upfront to see what it's doing.
+
+### Mac/Linux
+
+This will install Lektor in your `HOME`. Running it with `sudo` will result in
+a system installation instead.
+
+```
+curl -sf https://www.getlektor.com/installer.py | python3
+```
+
+You might need additional dependencies for this installation.  For more
+information see [Installation](../docs/installation/).
+
+### Windows
+
+If you are on Windows copy/paste this command into `Powershell`:
+
+```
+(new-object net.webclient).DownloadString('https://www.getlektor.com/installer.py') | python
+```
+
+or alternatively use this in `command prompt`:
+
+```
+@powershell -NoProfile -Command "(new-object net.webclient).DownloadString('https://www.getlektor.com/installer.py') | python"
+```
+
+
+## Desktop Application
+
+Lektor supported an installable version of Lektor on OSX. The current build process for these installers is [old and in need of refactoring](https://github.com/lektor/lektor/issues/420). Temporarily until this is resolved, as of version 3.1, this installer is no longer supported.
+----
+class: default

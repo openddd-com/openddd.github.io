@@ -1,0 +1,90 @@
+_model: page
+---
+title: License & Copyright
+---
+body:
+
+#### banner ####
+image: header.jpg
+#### text-block ####
+class: default
+----
+text:
+
+Lektor is a BSD-licensed Open Source project.  Independently of that the
+text content of the website (including documentation here) is CC0 and
+different rules apply for the assets.  For more information see below.
+
+## Lektor License
+
+Copyright (c) 2015 by the Armin Ronacher.
+
+Some rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are
+met:
+
+* Redistributions of source code must retain the above copyright
+  notice, this list of conditions and the following disclaimer.
+
+* Redistributions in binary form must reproduce the above
+  copyright notice, this list of conditions and the following
+  disclaimer in the documentation and/or other materials provided
+  with the distribution.
+
+* The names of the contributors may not be used to endorse or
+  promote products derived from this software without specific
+  prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+"AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+## Website License
+
+The text content and templates (excluding images and design) of this website
+is licensed under the CC0 license.  For information about the license text
+see [CC0 Legal Text](https://creativecommons.org/publicdomain/zero/1.0/legalcode).
+
+Note that this does not apply to images and design.
+
+## Photographs on Website
+
+For the pictures for this website (not including the pictures used in the
+documentation or blog posts):
+
+Copyright (c) 2016 Christian Cueni
+([christiancueni.com](http://www.christiancueni.com/)).  All rights reserved.
+
+## Lektor Logo License
+
+The Lektor “egg with feet” Logo is available under the “Lektor Logo License”.
+You can use the logo to promote Lektor like you want.
+
+License details:
+
+Copyright (c) 2016 Armin Ronacher
+
+Some rights reserved.
+
+This logo or a modified version may be used by anyone to refer to the Lektor
+project, but does not indicate endorsement by the project.
+
+Redistribution and use in source (the SVG files) and binary forms (rendered PNG
+files etc.) of the image, with or without modification, are permitted provided
+that the following conditions are met:
+
+* Redistributions of source code must retain the above copyright notice and
+  this list of conditions.
+* The names of the contributors to the Lektor software (see license) may not be
+  used to endorse or promote products derived from this software without
+  specific prior written permission.

@@ -1,3 +1,0 @@
-[lektor.plugins]
-atom = lektor_atom:AtomPlugin
-
