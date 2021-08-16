@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="/static/styles.css?h=beaa6504">
+  <link rel="stylesheet" href="/static/pygments.css">
+  <link rel="shortcut icon" href="">
+  <title> | Lektor Static Content Management System</title>
+</head>
+<body class="default">
+  <nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed"
+          data-toggle="collapse" data-target="#navbar"
+          aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/">Lektor</a>
+      </div>
+      <div id="navbar" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          
+            <li><a href="/downloads/">Download</a></li>
+          
+            <li><a href="/docs/">Documentation</a></li>
+          
+            <li><a href="/showcase/">Showcase</a></li>
+          
+            <li class="active"><a href="/plugins/">Plugins</a></li>
+          
+            <li><a href="/community/">Community</a></li>
+          
+            <li><a href="/blog/">Blog</a></li>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="body-wrapper">
+    
+  
+  
+    <div class="page-banner page-banner-300" style="background-image: url(/plugins/header.jpg)"></div>
+  
+  
+    <div class="container">
+      
+  
+  
+    
+  
+
+  <!-- Place this tag in your head or just before your close body tag. -->
+  
+  <div class="plugin">
+    <div class="row">
+      <div class="col-sm-12">
+        <h1>Plugin &ndash; lektor-tags 0.3</h1>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-11">
+        <p>Lektor plugin to add tags.<p>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col-sm-3 plugin-margin">
+        <h4>Project links</h4>
+        <ul class="tree-nav">
+          <li><a href="https://github.com/nixjdm/lektor-tags" class="ext">Homepage</a></li>
+        </ul>
+
+        
+          <div class="separator">
+            <h4>GitHub Statistics</h4>
+          </div>
+          <ul class="button-nav">
+            <li><p><a class="github-button" href="https://github.com/nixjdm/lektor-tags" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star lektor-tags on GitHub" target="_blank">Star</a></p></li>
+            <li><p><a class="github-button" href="https://github.com/nixjdm/lektor-tags/fork" data-icon="octicon-repo-forked" data-show-count="true" data-size="large" data-show="true" aria-label="Open Issues" target="_blank">Fork</a></p></li>
+            <li><p><a class="github-button" href="https://github.com/nixjdm/lektor-tags/issues" data-icon="octicon-issue-opened" data-show-count="true" data-size="large" data-show="true" aria-label="Open Issues" target="_blank">Open Issues</a></p></li>
+          </ul>
+        
+
+        <div class="separator">
+          <h4>Meta</h4>
+        </div>
+        <p><strong>Version:</strong> 0.3</p>
+        <p><strong>Author:</strong>
+          
+            <a href = "mailto:jesse@emptysquare.net">A. Jesse Jiryu Davis</a>
+          
+        </p>
+
+
+        <div class="separator">
+          <h4>Tags</h4>
+        </div>
+        
+          
+            
+            <a href="/zh_CN/plugins/tag/page-generation/">page generation</a>, 
+          
+            
+            <a href="/zh_CN/plugins/tag/setup-env/">setup-env</a>, 
+          
+            
+            <a href="/zh_CN/plugins/tag/tags/">tags</a>, 
+          
+            and 
+            <a href="/zh_CN/plugins/tag/virtual-paths/">virtual paths</a>
+          
+        
+        <p>View <a href="/plugins/tags" class="ref">all tags</a>.</p>
+      </div>
+
+      <div class="col-sm-9 doc-styling">
+        <h2>Project Description</h2>
+        
+          <h1>Lektor Tags Plugin</h1>
+<p><a href="https://pypi.org/project/lektor-tags/" rel="nofollow"><img alt="PyPI version" src="https://badge.fury.io/py/lektor-tags.svg"></a>
+</p>
+<h2>Introduction</h2>
+<p>This plugin implements tagging for your site. For each of your tags, it builds a page displaying a list of items that have that tag. This can be used for standard tag-based blog navigation. With this plugin you can give any number of tags to any blog posts, and a page will be created for each tag.</p>
+<p>For example, if your site has blog posts in your <code>content/blog</code> directory tagged with <code>coffee</code> and <code>tea</code>:</p>
+<pre><code>name: First Post
+---
+tags:
+
+coffee
+tea
+</code></pre>
+<p>The <code>lektor-tags</code> plugin builds pages at these URLs:</p>
+<ul>
+<li><code>/blog/tag/coffee/</code></li>
+<li><code>/blog/tag/tea/</code></li>
+</ul>
+<p>Each page can list all the posts with that tag.</p>
+<h2>Installation</h2>
+<p>Add lektor-tags to your project from command line:</p>
+<pre><code>lektor plugins add lektor-tags
+</code></pre>
+<p>See <a href="https://www.getlektor.com/docs/plugins/" rel="nofollow">the Lektor documentation for more instructions on installing plugins</a>.</p>
+<h2>Overview</h2>
+<p>Say you have a &quot;blog-post&quot; model like this:</p>
+<pre><code>[model]
+name = Blog Post
+
+[fields.tags]
+type = strings
+</code></pre>
+<p>Make a <code>blog-post.html</code> template that includes:</p>
+<pre><code>{% if this.tags %}
+  &lt;ul&gt;
+    {% for t in this.tags -%}
+      &lt;li&gt;
+        &lt;a href=&quot;{{ ('/blog@tag/' ~ t.lower())|url }}&quot;&gt;
+          All posts tagged {{ t }}
+        &lt;/a&gt;
+      &lt;/li&gt;
+    {% endfor %}
+  &lt;/ul&gt;
+{% endif %}
+</code></pre>
+<p>This expression in the template generates a <em>source path</em> for each of the blog post's tags:</p>
+<pre><code>'/blog@tag/' ~ t.lower()
+</code></pre>
+<p>Then if the tag is &quot;my-tag&quot;, the expression renders a source path like:</p>
+<pre><code>/blog/tag/my-tag
+</code></pre>
+<p>A Lektor source path becomes an actual URL using the <code>url</code> filter. So the template generates URLs to tag pages like:</p>
+<pre><code>&lt;a href=&quot;{{ ('/blog@tag/' ~ t.lower())|url }}&quot;&gt;&lt;/a&gt;
+</code></pre>
+<p>This uses the source path expression from before, but pipes it through <code>url</code> to generate an actual link from the blog post to a tag page.</p>
+<h2>Configuration</h2>
+<p>Set these options in <code>configs/tags.ini</code>:</p>
+<h3><code>parent</code></h3>
+<p>Required. The source path of the tag pages' parent page. For example:</p>
+<pre><code>parent = /blog
+</code></pre>
+<p>Then tag pages' source paths are like:</p>
+<pre><code>/blog/tag/my-tag
+</code></pre>
+<p>You can specify the root as the parent:</p>
+<pre><code>parent = /
+</code></pre>
+<h3><code>items</code></h3>
+<p>A query for all items on the page for one tag. You can use the variables <code>site</code> and <code>tag</code>. The template's <code>this</code> variable has a <code>parent</code> attribute. The default query is:</p>
+<pre><code>items = this.parent.children.filter(F.tags.contains(tag))
+</code></pre>
+<p>You can sort and filter with any expression:</p>
+<pre><code>items = this.parent.children.filter(F.tags.contains(tag) and F.status == 'published').order_by('-pub_date')
+</code></pre>
+<p>If the parent page has <a href="https://www.getlektor.com/docs/guides/pagination/" rel="nofollow">a pagination query</a> you may want to use it for tagged pages:</p>
+<pre><code>items = this.parent.pagination.items.filter(F.tags.contains(tag))
+</code></pre>
+<p>See <a href="https://www.getlektor.com/docs/api/db/query/" rel="nofollow">the Lektor documentation for queries</a>.</p>
+<h3><code>tags_field</code></h3>
+<p>The name of the field in your model that contains tags. Defaults to <code>tags</code>. The field should be of type <code>strings</code>. See <a href="https://www.getlektor.com/docs/api/db/types/strings/" rel="nofollow">the Lektor documentation for the <code>strings</code> type</a>.</p>
+<p>For example, if your model is like:</p>
+<pre><code>[fields.labels]
+type = strings
+</code></pre>
+<p>Then add this to <code>tags.ini</code>:</p>
+<pre><code>tags_field = labels
+</code></pre>
+<h3><code>template</code></h3>
+<p>The template for the page that lists all posts with a certain tag. The template's <code>this</code> variable has attributes <code>tag</code> and <code>items</code>. An example template:</p>
+<pre><code>&lt;h1&gt;Tag: {{ this.tag }}&lt;/h1&gt;
+&lt;h1&gt;Items:&lt;/h1&gt;
+&lt;ul&gt;
+  {% for i in this.items %}
+    &lt;li&gt;&lt;a href=&quot;{{ i|url }}&quot;&gt;{{ i._id }}&lt;/a&gt;&lt;/li&gt;
+  {% else %}
+    &lt;li&gt;&lt;em&gt;No items.&lt;/em&gt;&lt;/li&gt;
+  {% endfor %}
+&lt;/ul&gt;
+</code></pre>
+<p>Save a file like this to your project's <code>templates/tags.html</code>. If you name the file something different, like <code>label.html</code>, add this line to <code>tags.ini</code>:</p>
+<pre><code>template = label.html
+</code></pre>
+<p>The plugin provides a default template if you don't specify one.</p>
+<h3><code>url_path</code></h3>
+<p>An expression for the location of each tag page. You can use the variables <code>site</code> and <code>tag</code>. The <code>this</code> variable is a page with attributes <code>parent</code> and <code>items</code>. The default expression is:</p>
+<pre><code>url_path = {{ this.parent.url_path }}tag/{{ tag }}
+</code></pre>
+<p>This expression generates URLs like <code>/blog/tag/coffee</code>.</p>
+<h3><code>ignore_missing</code></h3>
+<p>Default false. To set true, add this line to <code>tags.ini</code>:</p>
+<pre><code>ignore_missing = true
+</code></pre>
+<p>This allows URLs to missing tag pages to be silently replaced with &quot;&quot;. The example use case is if your <code>blog-post.html</code> template includes a statement like:</p>
+<pre><code>{% for t in this.tags -%}
+  &lt;a href=&quot;{{ ('/blog@tag/' ~ t.lower())|url }}&quot;&gt;{{ t }}&lt;/a&gt;
+{% endfor %}
+</code></pre>
+<p>If a blog post <em>draft</em> is not discoverable, and it has any new tags used by no published blog posts, then those tag pages do not yet exist. Turn on <code>ignore_missing</code> to allow such drafts to be built. The tag-page URL path will be the empty string &quot;&quot;, until the draft is published and the tag page is created.</p>
+<h3><code>tags</code></h3>
+<p>Advanced configuration. An expression for the set of tags. The default expression is:</p>
+<pre><code>tags = parent.children.distinct(&quot;tags&quot;)
+</code></pre>
+<p>If you set <code>tags_field</code> to a different field name than &quot;tags&quot;, the default expression uses your custom field name. For example if you have this line in <code>tags.ini</code>:</p>
+<pre><code>tags_field = labels
+</code></pre>
+<p>Then the default value of <code>tags</code> is:</p>
+<pre><code>tags = parent.children.distinct(&quot;labels&quot;)
+</code></pre>
+<p>You can use any template expression. For example, if your items have a &quot;published&quot; boolean field, you can select tags of published items:</p>
+<pre><code>tags = parent.children.filter(F.published).distinct(&quot;tags&quot;)
+</code></pre>
+<p>Or even list your tags manually:</p>
+<pre><code>tags = [&quot;tag1&quot;, &quot;tag2&quot;]
+</code></pre>
+<p>See <a href="https://www.getlektor.com/docs/api/db/query/" rel="nofollow">the Lektor documentation for queries</a>.</p>
+<p>Tags are always deduplicated, and alphabetically ordered.</p>
+ 
+        
+
+        
+          <div class="comment-box">
+            <h2>Comments</h2>
+            
+<div id="disqus_thread"></div>
+<script>
+  var disqus_config = function() { this.page.identifier = "/plugins/lektor-tags"; this.page.url = "https://www.openddd.com/plugins/lektor-tags/"; };
+  (function() {
+    var d = document, s = d.createElement('script');
+    s.src = '//lektordocumentation.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+</script>
+<noscript>
+  Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript"
+    rel="nofollow">comments powered by Disqus.</a>
+</noscript>
+
+          </div>
+        
+      </div>
+    </div>
+  </div>
+
+    </div>
+    
+
+  </div>
+
+  
+  <div class="bottomsummary">
+    <div class="container">
+    </div>
+  </div>
+  
+
+  
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4 icon-bar">
+          <a href="https://github.com/lektor/lektor/" title="Lektor on GitHub"
+            ><i class="fa fa-github"></i></a>
+          <a href="https://github.com/lektor/lektor/issues/" title="Report Issues for Lektor"
+            ><i class="fa fa-bug"></i></a>
+          <a href="https://twitter.com/getlektor" title="Find Lektor on Twitter"
+            ><i class="fa fa-twitter"></i></a>
+          <a href="https://gitter.im/lektor/lektor" title="Chat on Gitter"
+            ><i class="fa fa-comment"></i></a>
+          <a href="https://github.com/lektor/lektor-website/tree/master/content/plugins/lektor-tags/contents.lr" title="View source for this page"><i class="fa fa-code"></i></a>
+        </div>
+        <div class="col-sm-8">
+          <a href="/license/">License & Copyright</a> •
+          <a href="/contact/">Contact</a> •
+          Made with <i class="fa fa-fw fa-heart" title="Heart"><span hidden>Heart</span></i> in Carinthia
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+
+  <script type=text/javascript src="/static/app.js?h=ec4c2080" charset="utf-8"></script>
+  <script>
+    ((window.gitter = {}).chat = {}).options = {
+      room: 'lektor/lektor',
+      activationElement: null
+    };
+    document.write('<button class="js-gitter-toggle-chat-button">Toggle Chat</button>');
+    var dnt = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+    if (dnt != "1" && dnt != "yes") {
+    window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-70822533-1', 'auto');
+      ga('set', 'anonymizeIp', true);
+      ga('send', 'pageview');
+    } else {
+      console.debug("Respecting Do-Not-Track, not running analytics.");
+    }
+  </script>
+  <script async src='https://www.google-analytics.com/analytics.js'></script>
+  <script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+  <script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
+</body>
+</html>
