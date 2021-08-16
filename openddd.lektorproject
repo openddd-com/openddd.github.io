@@ -1,5 +1,7 @@
 [project]
 name = openddd
+url = https://www.openddd.com/
+url_style = absolute
 
 [servers.ghpages]
 target = ghpages://openddd-com/openddd.github.io?cname=openddd.com
