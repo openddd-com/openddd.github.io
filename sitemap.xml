@@ -87,7 +87,14 @@
   <url><loc>https://www.openddd.com/plugins/lektor-npm-support/</loc></url>
   <url><loc>https://www.openddd.com/plugins/lektor-minify/</loc></url>
   <url><loc>https://www.openddd.com/plugins/lektor-htmlmin/</loc></url>
-  <url><loc>https://www.openddd.com/downloads/</loc></url>
+  <url><loc>https://www.openddd.com/stories/</loc></url>
+  <url><loc>https://www.openddd.com/stories/intercourse/</loc></url>
+  <url><loc>https://www.openddd.com/stories/family/</loc></url>
+  <url><loc>https://www.openddd.com/stories/transportation/</loc></url>
+  <url><loc>https://www.openddd.com/stories/recreation/</loc></url>
+  <url><loc>https://www.openddd.com/stories/cloud/</loc></url>
+  <url><loc>https://www.openddd.com/stories/nlp/</loc></url>
+  <url><loc>https://www.openddd.com/stories/finance/</loc></url>
   <url><loc>https://www.openddd.com/404.html</loc></url>
   <url><loc>https://www.openddd.com/blog/</loc></url>
   <url><loc>https://www.openddd.com/blog/2020/8/lektor-32-released/</loc></url>
@@ -98,8 +105,11 @@
   <url><loc>https://www.openddd.com/blog/2016/3/road-to-lektor-2/</loc></url>
   <url><loc>https://www.openddd.com/blog/2015/12/travis-and-ghpages/</loc></url>
   <url><loc>https://www.openddd.com/blog/2015/12/hello-lektor/</loc></url>
+  <url><loc>https://www.openddd.com/cores/</loc></url>
+  <url><loc>https://www.openddd.com/cores/what/</loc></url>
   <url><loc>https://www.openddd.com/license/</loc></url>
   <url><loc>https://www.openddd.com/docs/</loc></url>
+  <url><loc>https://www.openddd.com/docs/downloads/</loc></url>
   <url><loc>https://www.openddd.com/docs/what/</loc></url>
   <url><loc>https://www.openddd.com/docs/installation/</loc></url>
   <url><loc>https://www.openddd.com/docs/quickstart/</loc></url>
