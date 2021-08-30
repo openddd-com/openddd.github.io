@@ -1,0 +1,24 @@
+title: Cloud Operation
+---
+summary: A brief introduction to cloud computing and IT operations.
+---
+sort_key: 05
+---
+body:
+
+AWS has invested billions of dollars in IT resources that are distributed across the globe.
+and the use of those resources are shared amongst thousands upon thousands of AWS account holders.
+you may want to have the lowest latency.
+aws region connected to each other with fast, private, high-speed fiber-optic network.
+
+
+*Lektor is different from any of these.*
+
+## Application
+
+## 
+
+
+
+---
+_template: doc-page-story.html

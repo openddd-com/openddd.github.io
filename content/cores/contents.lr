@@ -1,0 +1,20 @@
+_model: doc-page
+---
+title: Core Frameworks
+---
+allow_comments: yes
+---
+body:
+
+Welcome to the Openddd documentation center.  Here you can find everything
+about how to use Openddd from both a developer's as well as an end user's
+point of view.  New to Openddd?  Then read about [what makes Openddd
+special :ref](what/).
+
+The documentation is a work in progress and there will be areas that are
+lacking.  If you have any feedback or you want to help out with the
+documentation project you can head over to the
+[GitHub Repository :ext](https://github.com/openddd-com/openddd.github.io) of this website.
+
+---
+_template: doc-page-core.html

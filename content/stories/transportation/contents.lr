@@ -1,0 +1,235 @@
+title: Transportation
+---
+summary: A brief introduction into what makes you through effectioncy.
+---
+sort_key: 03
+---
+body:
+
+When it comes to creating websites, there is a ludicrous number of tools available.
+They range from full-blown content management solutions like Drupal to
+desktop solutions like Google Web Designer to Cloud Hosted Website solutions
+like WIX to more programmer focused approaches like Jekyll which generate
+websites out of templates and markdown files.
+
+*Lektor is different from any of these.*
+
+## Flight
+
+I would like to make a flight reservation.
+
+I want to book a seat to New York.
+
+I want a ticket for May 22.
+
+Do you have any tickets available for that date?
+
+One way or round trip?
+
+How much is a one-way ticket to New York?
+
+Are there any discount tickets for me?
+
+How many hours will our flight take?
+
+Can you arrange a connecting flight for me?
+
+Where do you want to stop?
+
+What flight would you like to change to?
+
+How much luggage can I take with me?
+
+What if I want to put off my flight?
+
+Waht if I want to cancel the flight?
+
+I need to reschedule my flight.
+
+Can I change my flight schedule?
+
+I'd like to confirm my reservation.
+
+I'd like to have my return flight changed, please.
+
+I'd like to take the first flight available.
+
+I want to cancel my flight reservation.
+
+How many hours in advance should I return the ticket?
+
+What is the check-in time?
+
+Is this the right counter to check in for my flight?
+
+Can I have your ticket and passport, please?
+
+From which gate does the airplane leave for London?
+
+Which gate does the airplane for London leave from?
+
+Passport and boarding pass, please.
+
+Can I have a look at your passport?
+
+Would you please fill out this form?
+
+Do I have write down all the things I have to declare?
+
+Let me take a look at this bag. Can you open it?
+
+You have to pay for this camera.
+
+How much luggage can one take on the plane?
+
+How many carry-on items are permitted?
+
+You're permitted two carry-on items.
+
+Is that all?
+
+May I see your customs declaration?
+
+This line is moving so slow.
+
+How many cigarettes can I bring with me?
+
+What should I take when I'm boarding?
+
+You'll have to open your suitcase anyway.
+
+What are the check-in procedures?
+
+You'll have to check that item of luggage.
+
+Please put the baggage on the scales.
+
+Hand-baggage is not to be weighed.
+
+Your other things may be taken along with you.
+
+Can I bring this on the plane?
+
+Are my suitcases overweight?
+
+You have to pay excess baggage charges.
+
+Check it in to my final destination.
+
+This is fragile.
+
+Here are the tags for your traveling bags.
+
+Would you please put on the baggage label.
+
+It will be more convenient to claim our luggage with baggage label.
+
+Excuse me, where can I get my luggage?
+
+Have you cleared your luggage with customs.
+
+When can my baggage come in.
+
+Is all your luggage here?
+
+I'm looking for my baggage.
+
+My luggage is missing.
+
+Could you check to see where my luggage is?
+
+MY baggage hasn't shown up in the baggage claim area.
+
+Will my baggage arrive on the next flight?
+
+Where can I find a luggage trolley?
+
+Do I need to pay for the baggage cart?
+
+This is fragile, so please be carefule.
+
+My luggage is damaged.
+
+Where can I go to report it?
+
+May I have baggage tags?
+
+Can you show me the way to my seat?
+
+May I put my bag on the rack?
+
+I want to change my seat.
+
+Would you mind trading seats with me?
+
+Where are the safty belts?
+
+This is the call button.
+
+What would you like to drink?
+
+It's time for lunch.
+
+Would you please put down the tray?
+
+Do you have any Chinese newspaper or magazine?
+
+May I have a sick bag?
+
+Where is the restroom?
+
+We're about to land.
+
+Is this all right to loosen my seat belt?
+
+May I have a disembarkation card?
+
+Do I have a change planes?
+
+I'm a transit passenger for flight 217.
+
+I'm transferring to London here.
+
+## Lektor is a CMS
+
+Lektor takes from content management systems like WordPress and provides a
+flexible browser-based admin interface from which you can edit your website's
+contents.  Unlike traditional CMS solutions, however, it runs entirely on your
+own computer.
+
+This means you can give a Lektor website to people that have no understanding
+of programming and they can still modify the content and update the website.
+
+<img src="admin.png" alt="" class="screenshot">
+
+## Lektor is a Framework
+
+Lastly, Lektor learns from experience in writing web frameworks.  Lektor
+is much more than a website generator because it is based on a very flexible
+internal flat file database which can be used to model any website content.
+Unlike static blog generators which are based on some markdown content and
+“front matter” metadata Lektor's content is 100% configurable.
+
+If you have ever used a web framework like Django or Ruby on Rails you might
+feel right at home in how you can model and query your data.
+
+<img src="templates.png" alt="" class="screenshot">
+
+## Collaborate and Synchronize
+
+Lektor acknowledges that there are web developers and content editors and that
+their interests and preferences are very different.  This is reflected heavily
+in the design of Lektor and if you make your first Lektor project you can see
+why.  A web developer would go in and setup the theme and structure of a
+Lektor project and content creators can then fill in the content of the site.
+
+The collaboration can be based on version control systems like git or just
+basic solutions like Dropbox.  It's intentionally built so that collaboration
+can work via the most basic systems like Dropbox or just network shares.
+
+When you go live, you can synchronize up your changes into a remote server
+just as easily.
+
+<img src="git.png" alt="" class="screenshot">
+---
+_template: doc-page-story.html
