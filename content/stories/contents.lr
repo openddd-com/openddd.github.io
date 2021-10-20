@@ -6,15 +6,34 @@ allow_comments: yes
 ---
 body:
 
-Welcome to the Openddd documentation center.  Here you can find everything
-about how to use Openddd from both a developer's as well as an end user's
-point of view.  New to Openddd?  Then read about [what makes Openddd
-special :ref](what/).
+
+
+Welcome to the Openddd story center.  Here you can find everything
+about why did we do and why are we doing this.  
+
+Building Our openddd brain and confidence.
+
+Why to Openddd?  Then read about [what makes Openddd
+special :ref](why/).
+
+Just keep in mind to think about it anytime, anywhere.
+
+And to make sure: Do one thing at a time, and do well.
+
+It will become a part of my life.
 
 The documentation is a work in progress and there will be areas that are
 lacking.  If you have any feedback or you want to help out with the
 documentation project you can head over to the
-[GitHub Repository :ext](https://github.com/openddd-com/openddd.github.io) of this website.
+[GitHub Repository :ext](https://github.com/openddd-com/openddd.github.io/tree/lektor/content/stories) of this website.
+
+## keep it in mind
+
+## learn from more resources
+
+## use those experiences creatively
+
+## comunicate with other people
 
 ---
 _template: doc-page-story.html

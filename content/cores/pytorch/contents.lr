@@ -1,0 +1,59 @@
+title: Pytorch
+---
+summary: A brief introduction into how to use Pytorch.
+---
+sort_key: 20
+---
+body:
+
+
+
+*Lektor is different from any of these.*
+
+## technical compair
+
+caffe
+
+tensorflow
+
+pytorch https://pytorch.org/
+
+## install
+
+https://pytorch.org/get-started/locally/
+
+```
+pip install torch torchvision torchaudio
+
+```
+## Lektor is a Framework
+
+Lastly, Lektor learns from experience in writing web frameworks.  Lektor
+is much more than a website generator because it is based on a very flexible
+internal flat file database which can be used to model any website content.
+Unlike static blog generators which are based on some markdown content and
+“front matter” metadata Lektor's content is 100% configurable.
+
+If you have ever used a web framework like Django or Ruby on Rails you might
+feel right at home in how you can model and query your data.
+
+<img src="templates.png" alt="" class="screenshot">
+
+## Collaborate and Synchronize
+
+Lektor acknowledges that there are web developers and content editors and that
+their interests and preferences are very different.  This is reflected heavily
+in the design of Lektor and if you make your first Lektor project you can see
+why.  A web developer would go in and setup the theme and structure of a
+Lektor project and content creators can then fill in the content of the site.
+
+The collaboration can be based on version control systems like git or just
+basic solutions like Dropbox.  It's intentionally built so that collaboration
+can work via the most basic systems like Dropbox or just network shares.
+
+When you go live, you can synchronize up your changes into a remote server
+just as easily.
+
+<img src="git.png" alt="" class="screenshot">
+---
+_template: doc-page-core.html

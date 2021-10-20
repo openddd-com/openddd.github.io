@@ -5,10 +5,12 @@ https://docs.conda.io/projects/conda/en/latest/commands.html
 
 conda update conda
 
-python -m venv .venv
+python3 -m venv .venv
 
+#windows
 .\.venv\Scripts\activate
-
+#linux
+. .venv/bin/activate
 python -m pip  install --upgrade pip
 python -m pip install --upgrade setuptools wheel lektor
 # refer
